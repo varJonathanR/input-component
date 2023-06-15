@@ -1,42 +1,51 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Base */
+input{
+    border: 1px solid var(--secondary-color);
+}
+input:hover{
+    border: 1px solid black;
+}
+input:focus{
+    border: 1px solid var(--lightblue);
+}
+.hover{
+    border: 1px solid black;
+}
+.focus{
+    border: 1px solid var(--lightblue);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* Error */
+.error{
+    border: 1px solid red;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.error:focus{
+    border: 1px solid red;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.error-hover{
+    border: 1px solid black;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error-hover:focus{
+    border: 1px solid red;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.error-focus{
+    border: 1px solid red;
+}
+.error-focus:focus{
+    border: 1px solid red;
+}
+.error-text{
+    color: red;
 }
 
-.card {
-  padding: 2em;
+/* Disabled */
+.disabled{
+    border: none;
+    background-color: var(--tertiary-color);
 }
-
-.read-the-docs {
-  color: #888;
+.disabled:hover{
+    border: none;
+}
+.disabled:focus{
+    border: none;
 }
